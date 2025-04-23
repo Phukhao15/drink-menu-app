@@ -10,7 +10,7 @@ const Navbar = ({
   searchQuery,
   setSearchQuery
 }) => {
-  const categories = ["all", "tea", "coffee", "soda", "milk", "fruits"];
+  const categories = ["all", "tea", "coffee", "soda",  "fruits"];
 
   const translate = (th, en, zh) => {
     return language === "th" ? th : language === "en" ? en : zh;

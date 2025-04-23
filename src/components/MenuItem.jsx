@@ -66,28 +66,31 @@ const MenuItem = ({ name, image, price, lang }) => {
       whileHover="hover"
       whileTap="tap"
       variants={cardVariants}
-      className="bg-white rounded-2xl shadow-lg hover:shadow-xl overflow-hidden cursor-pointer"
+      className="bg-white rounded-2xl shadow-lg hover:shadow-xl overflow-hidden cursor-pointer flex flex-col"
       style={{ willChange: 'transform' }}
     >
-      <motion.div 
-        className="overflow-hidden"
-        whileHover="hover"
-      >
+      {/* เปลี่ยนส่วนแสดงรูปภาพ */}
+      <div className="relative w-full h-48 bg-green-800  flex items-center justify-center overflow-hidden">
         <motion.img
           src={image}
           alt={name[lang]}
           variants={imageVariants}
-          className="w-full h-48 object-contain object-center bg-green-800 p-4"
-          style={{ transformOrigin: 'center center' }}
+          className="h-full object-contain p-4"
+          style={{ 
+            maxWidth: '100%',
+            maxHeight: '100%',
+            width: 'auto',
+            transformOrigin: 'center center'
+          }}
         />
-      </motion.div>
+      </div>
       
       <motion.div 
-        className="p-4 text-center"
+        className="p-4 text-center flex-grow flex flex-col"
         variants={textVariants}
       >
         <motion.h3 
-          className="text-xl font-bold text-gray-800 mb-2"
+          className="text-xl font-bold text-gray-800 mb-2 flex-grow"
           whileHover={{ color: "#1E40AF" }}
         >
           {name[lang]}

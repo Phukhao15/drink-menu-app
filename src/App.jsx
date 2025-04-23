@@ -81,9 +81,7 @@ const App = () => {
     transition={{ delay: 0.2 }}
     className="relative"
   >
-    <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600 font-serif mb-2">
-      ป้าญา
-    </h1>
+
     <motion.div
       className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-amber-400 rounded-full"
       initial={{ scaleX: 0 }}
