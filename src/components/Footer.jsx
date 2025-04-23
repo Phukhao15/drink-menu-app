@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 
-function Footer({ language }) {
-  const translate = (th, en, zh) => {
-    return language === "th" ? th : language === "en" ? en : zh;
-  };
-
+function Footer() {  // เอาพารามิเตอร์ language ออก
   return (
     <div className="bg-white/90 backdrop-blur">
       {/* Footer */}
@@ -16,19 +12,10 @@ function Footer({ language }) {
       >
         <div className="max-w-6xl mx-auto">
           <p className="mb-2">
-            © {new Date().getFullYear()} {translate("ป้าญาชาชัก", "Paa Ya Cha Chak", "雅茶店")} -{" "}
-            {translate(
-              "เครื่องดื่มอร่อยทุกแก้ว",
-              "Delicious drinks in every cup",
-              "每杯都美味的饮品"
-            )}
+            © {new Date().getFullYear()} ป้าญาชาชัก - เครื่องดื่มอร่อยทุกแก้ว
           </p>
           <p className="text-xs text-gray-400">
-            {translate(
-              "สร้างด้วยความรักจากป้าญา",
-              "Made with love by Paa Ya",
-              "由雅阿姨用爱制作"
-            )}
+            สร้างด้วยความรักจากป้าญา
           </p>
         </div>
       </motion.footer>
