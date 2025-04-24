@@ -34,30 +34,8 @@
 - npm run dev
 
 
-4. เปิดเบราว์เซอร์ที่ http://localhost:3000
+4. เปิดเบราว์เซอร์ที่ http://localhost:5713
 
-## 📁 โครงสร้างโปรเจค
-
-```
-beverage-menu-app/
-├── public/
-│   └── images/
-│       └── drinks/ # รูปภาพเครื่องดื่ม
-├── src/
-│   ├── components/ # React Components
-│   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   ├── LocationSection.jsx
-│   │   ├── MenuItem.jsx
-│   │   └── Navbar.jsx
-│   ├── data/ # ข้อมูล
-│   │   ├── categoryLabels.js # ข้อความหมวดหมู่ในแต่ละภาษา
-│   │   └── drinks.js # ข้อมูลเครื่องดื่มทั้งหมด
-│   ├── App.jsx # หน้าหลักของแอป
-│   └── main.jsx # Entry point
-├── package.json
-└── README.md
-```
 
 ## 🌐 รูปแบบข้อมูล
 
@@ -130,7 +108,6 @@ const categoryLabels = {
 ```
 
 ## 🧩 Components
-
 - **Navbar**: แถบนำทางด้านบน มีตัวเลือกภาษา, ปุ่มกรองหมวดหมู่ และช่องค้นหา
 - **MenuItem**: แสดงข้อมูลเครื่องดื่มแต่ละรายการ
 - **LocationSection**: แสดงข้อมูลที่ตั้งร้าน
@@ -138,8 +115,6 @@ const categoryLabels = {
 - **Header**: ส่วนหัวของเพจ
 
 ## 🔜 แผนพัฒนาในอนาคต
-
-- [ ] เพิ่มภาษาอื่นๆ
 - [ ] เพิ่มระบบตะกร้าสินค้า
 - [ ] เพิ่มหน้าแสดงรายละเอียดเครื่องดื่ม
 - [ ] เพิ่มระบบ dark mode
